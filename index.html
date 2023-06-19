@@ -24,11 +24,11 @@
 
   <!-- Liaisons du fichier JS si vous faites le bonus
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="script.js" defer></script>
+  <script src="script.js" defer></script>
 
   <!-- Liaison du Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" href="images/favicon.png">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
   <header class="header">
@@ -40,7 +40,6 @@
   <!-- Structure principale de la page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <main class="container">
-
     <section class="sectionRegles">
         <div>
           <h1>Charte de promo</h1>
@@ -54,8 +53,8 @@
     <br>
     <section class="menu">
       <div class="accordion">
-        <input type="checkbox" id="tabReussiteCollective" />
-        <label class="accordion-label" for="tabReussiteCollective">Réussite Collective</label>
+        <input type="checkbox" id="tabReussiteCollective">
+        <label class="accordion-label" for="tabReussiteCollective"><h2>Réussite Collective</h2></label>
         <div class="accordion-content">
           <ol>
             <li>Si j’ai fini un exercice, j’aide les autres</li>
@@ -69,8 +68,8 @@
     <br>
     <section class="menu">
      <div class="accordion">
-        <input type="checkbox" id="tab1"/>
-        <label class="accordion-label" for="tab1">Vivre ensemble</label>
+        <input type="checkbox" id="tab1">
+        <label class="accordion-label" for="tab1"><h2>Vivre ensemble</h2></label>
         <div class ="accordion-content">
           <ol>
             <li>Saluer tout le monde  en  arrivant</li> 
@@ -85,8 +84,8 @@
     <br>
     <section class="menu">
       <div class="accordion">
-        <input type="checkbox" id="tabPourLeFun" />
-        <label class="accordion-label" for="tabPourLeFun">Pour le fun</label>
+        <input type="checkbox" id="tabPourLeFun">
+        <label class="accordion-label" for="tabPourLeFun"><h2>Pour le fun</h2></label>
         <div class="accordion-content">
           <ol>
             <li>Payer le petit dejeuner au bout 20min de retard</li>
@@ -97,7 +96,7 @@
     </section>
     <br>
     <section class="sectionCode">
-      <p>&nbsp;Grâce à ce règlement on obtient le code suivant :</p>
+      <h2>Grâce à ce règlement on obtient le code suivant :</h2>
       <pre><code style="overflow: auto;">
       var compétencesDePromo = [];
       var humeurPromo = 'Au top';
@@ -113,12 +112,8 @@
   <footer class="footer">
     <div class="boutonRandom">
         <p class="textBouton" id="demo" onclick="remplaceBouton()">Random apprenant</p>
-        <!-- <p id="demo"></p> -->
-        <!-- onclick="remplaceBouton() -->
     </div>
   </footer>
   <br>
-  <!-- Fin du document (fermeture des balises)
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

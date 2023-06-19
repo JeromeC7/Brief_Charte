@@ -1,38 +1,33 @@
-/* En tete de la page */
-.header{
-    height: 72px;
-    /* width: 1440px; */
-    left:0;
-    top:0;
-    border-radius: 0px;  
-    position: fixed;
-    z-index: 2;
-    background-color: white;
+body {
+    background-color: #f4f6f8;
 }
+/* En tete de la page */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 main.container{
     margin-top: 100px;
 }
-
 .containerHeader{
-    box-shadow: none;
-    height: 47px;
-    /* width: 473px; */
-    margin: 13px 701px 12px 266px;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
     line-height: 47px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
+    background-color: #FFFFFF;
 }
-
 h1{
-    height: 38px;
     width: 322px;
     left: 266px;
     top: 122px;
     border-radius: nullpx;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 600;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;    
@@ -58,40 +53,19 @@ h1{
 
 ol{
     list-style-image:url('../images/bullet.png');
+    font-size: 16px;
+    font-weight: 400px;
 }
 
 .sectionCode{
     margin: auto;
-    /* Rectangle 3 */
     box-sizing: border-box;
-    /* width: 943px; */
-    /* height: 192px; */
     left: 266px;
     top: 878px;
-
-    background: #E4E4E4;
-    border: 1px solid #A2A2A2;
-    border-radius: 17px;
 }
 .footer{
     display:flex;
     width: 100%;
-}
-
-/* Etape bouton */
-
-.boutonRandom{
-    /* Rectangle 4 */
-    /* position: absolute; */
-    display:flex;
-    margin:auto;
-    width: 193px;
-    height: 41px;
-    left: 641px;
-    top: 1143px;
-    height: 41px;
-    background: #CE0033;
-    border-radius: 5px;
 }
 .boutonGithub{
     display: flex;
@@ -110,6 +84,8 @@ ol{
 }
 .boutonRandom{
     display: flex;
+    margin:auto;
+    top: 1143px;
     width: 193px;
     height: 41px;
     background: #CE0033;
@@ -141,6 +117,7 @@ input {
 
   /* Menu accordeon */
 .accordion {
+    background-color: #fff;
     margin: 10px;
     border-radius: 5px;
     overflow: hidden;
@@ -149,9 +126,9 @@ input {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    font-weight: bold;
     cursor: pointer;
     color: black;
+    font-size: 2.3rem;
 }
 .accordion-content {
     max-height: 0;
@@ -164,11 +141,18 @@ input:checked ~ .accordion-content {
     padding: 1em;
 }
 
-/* Larger than mobile */
-@media (max-width: 480px) {
-    .menu,header{
-        margin : auto;
+/*  */
+/* ************* */
+/* Media queries */
+/* ************* */
+
+@media screen and (max-width: 768px) {
+    header .title {
+      font-size: 2.5rem;
     }
-}
+    .align-right {
+      text-align: center;
+    }
+  }
 
  
